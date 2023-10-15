@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+            background-image: url("image.png")
+
+        }
+          
+        h1  {
+            color: red;
+            text-align: center;
+        }
+        h2 {
+            color:red;
+            text-align: left;
+        }
+        p {
+            color:black;
+            font-family: verdana;
+            font-size: 20px;
+        }
+        p.dotted {border-style: dotted;}
+        p.dashed {border-style: dashed;}
+        p.solid {border-style: solid;}
+        p.double {border-style: double;}
+        p.groove {border-style: groove;}
+        p.ridge {border-style: ridge;}
+        p.inset {border-style: inset;}
+        p.outset {border-style: outset;}
+        p.none {border-style: none;}
+        p.hidden {border-style: hidden;}
+        p.mix {border-style: dotted dashed solid double;}
+        #example1 {
+            border: 10px dotted black;
+            padding: 15px;
+            background: lightblue;
+            background-clip: border-box;  
+          }
+          
+          #example2 {
+            border: 10px dotted black;
+            padding: 15px;
+            background: lightblue;
+            background-clip: padding-box;
+          }
+          
+          #example3 {
+            border: 10px dotted black;
+            padding: 15px;
+            background: lightblue;
+            background-clip: content-box;
+          }
+
+    </style>
+</head>
+<body>
+    <h1>BACKGROUND:</h1>
+    <h2>Background Color:</h2>
+    <p style="background-color:yellow;">background-color:yellow</p>
+    <p style="background-color:pink;">background-color:red</p>
+    <p style="background-color:blueviolet">background-color:blueviolet</p>
+    <h2>Background image:</h2>
+    <p>body{background-image=url("")}</p>
+    <h2>backgroundrepeat:</h2>
+    <pre>
+    <p>background-repeat: no-repeat;
+        Showing the background image only once is also specified by the background-repeat property:
+    </p></pre>
+    <pre>
+    <h2>Background position:</h2>
+    <p>background-position: right top;
+        Showing the background image only once is also specified by the background-repeat property:
+    </p>
+    </pre>
+    <h2>Background attachment:</h2>
+    <p style="background-attachment: fixed;">background-attachment: fixed;</p>
+    <p style="background-attachment: scroll;">background-attachment: scroll;</p>
+    <h2>Background clip:</h2>
+    <p>background-clip: border-box (this is default):</p>
+    <div id="example1">
+    <p>The background extends behind the border.</p>
+    </div>
+
+    <p>background-clip: padding-box:</p>
+    <div id="example2">
+    <p>The background extends to the inside edge of the border.</p>
+    </div>
+
+    <p>background-clip: content-box:</p>
+    <div id="example3">
+    <p>The background extends to the edge of the content box.</p>
+
+    <h2>Background origin:</h2>
+    <pre>
+        background-origin: padding-box;
+        background-origin: border-box;
+        background-origin: content-box;
+    </pre>
+    <h2>Background Size:</h2>
+    <pre>
+        background-size: auto;
+        background-size: 100px 300 px;
+    </pre>
+    <br><hr>
+
+    <h1>BORDER</h1>
+    <h2>Border Style:</h2>
+    <p class="dotted">A dotted border. border-style:dotted;</p>
+    <p class="dashed">A dashed border. border-style:dashed;</p>
+    <p class="solid">A solid border. border-sty le:solid;</p>
+    <p class="double">A double border. border-style:double;</p>
+    <p class="groove">A groove border. border-style:groove;</p>
+    <p class="ridge">A ridge border. border-style:ridge;</p>
+    <p class="inset">An inset border. border-style:ridge;</p>
+    <p class="outset">An outset border. border-style:outset;</p>
+    <p class="none">No border. border-style:none;</p>
+    <p class="hidden">A hidden border. border-style:hidden;</p>
+    <p class="mix">A mixed border. border-style:mix;</p>
+    <br><hr>
+    <h2>Border Width:</h2>
+    <p style="border-style: solid;border-width: 5px;">border-style: solid;border-width: 5px;</p>
+    <p style="border-style: solid;border-width: medium;">border-style: solid;border-width: medium;</p>
+    <p style="border-style: dotted;border-width: 2px;">border-style: dotted;border-width: 2px;</p>
+    <p style="border-style: dotted;border-width: thick;">border-style: dotted;border-width: thick;</p>
+    <h2>Border Color:</h2>
+    <p style="border:2px solid Tomato;">border:2px Tomato </p>
+    <p style="border:2px solid DodgerBlue;">border:2px solid DodgerBlue</p>
+    <p style="border:2px solid Violet;">border:2px solid Violet</p>
+    <br><hr>
+    <h2>Border Sides:</h2>
+    <p style="border-top-style: dotted;border-right-style: solid;border-bottom-style: dotted;border-left-style: solid;">
+        border-top-style: dotted;
+        border-right-style: solid;
+        border-bottom-style: dotted;
+        border-left-style: solid;</p>
+    <br><hr>
+    <h2>Rounded Borders using border-radius property:</h2>
+    <p style="border: 2px solid red;padding: 5px;">Normal border</p>
+    <p style="border: 2px solid red;border-radius: 5px;padding: 5px;">Round border</p>
+    <P style="border: 2px solid red;border-radius: 8px;padding: 5px;">Rounder border</P>
+    <P style="border: 2px solid red;border-radius: 12px;padding: 5px;">Roundest border</P>
+    <br><hr>
+    <h2>Margins:</h2>
+    <P style="border: 1px solid black;margin-top: 100px;margin-bottom: 100px;margin-right: 150px;margin-left: 80px;background-color: lightblue;">border: 1px solid black;margin-top: 100px;margin-bottom: 100px;margin-right: 150px;margin-left: 80px;background-color: lightblue;</P>
+    <br><hr>
+</body>
+</html>
